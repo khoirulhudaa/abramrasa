@@ -313,33 +313,15 @@
         <h2 data-aos="fade-up">Gallery</h2>
         <p class="p" data-aos="fade-up">Wedding organizer yang menyediakan berbagai pelayan untuk suatu acara pernikahan.</p>
         <div class="flexbin flexbin-margin" data-aos="fade-up">
-            <a href="#">
-                <img src="./images/img_default/gl1.jpg" />
-            </a>
-            <a href="#">
-                <img src="./images/img_default/gl2.jpg" />
-            </a>
-            <a href="#">
-                <img src="./images/img_default/gl3.jpg" />
-            </a>
-            <a href="#">
-                <img src="./images/img_default/gl4.jpg" />
-            </a>
-            <a href="#">
-                <img src="./images/img_default/gl5.jpg" />
-            </a>
-            <a href="#">
-                <img src="./images/img_default/gl6.jpg" />
-            </a>
-            <a href="#">
-                <img src="./images/img_default/gl7.jpg" />
-            </a>
-            <a href="#">
-                <img src="./images/img_default/gl8.jpg" />
-            </a>
-            <a href="#">
-                <img src="./images/img_default/gl9.jpg" />
-            </a>
+                <img src="./images/img_default/gl1.jpg" onclick="myFunction(this.src)" />
+                <img src="./images/img_default/gl2.jpg" onclick="myFunction(this.src)" />
+                <img src="./images/img_default/gl3.jpg" onclick="myFunction(this.src)" />
+                <img src="./images/img_default/gl4.jpg" onclick="myFunction(this.src)" />
+                <img src="./images/img_default/gl5.jpg" onclick="myFunction(this.src)" />
+                <img src="./images/img_default/gl6.jpg" onclick="myFunction(this.src)" />
+                <img src="./images/img_default/gl7.jpg" onclick="myFunction(this.src)" />
+                <img src="./images/img_default/gl8.jpg" onclick="myFunction(this.src)" />
+                <img src="./images/img_default/gl9.jpg" onclick="myFunction(this.src)" />
         </div>
     </section>
 
@@ -409,6 +391,30 @@
        </div>
       </footer>
 
+      <div class="delete" id="preview">
+        <div class="overlay"></div>
+        <div class="wrap-preview">
+            <div class="close" onclick="myDelete()">
+                <img src="./images/icons/close.svg" alt="close">
+            </div>
+            <img src="" alt="img-preview" id="main">
+        </div>
+      </div>
+
+    <script>
+        function myFunction(src) {
+            document.getElementById('preview').classList.add('show')
+            document.getElementById('preview').classList.remove('delete')
+            document.getElementById('main').src = src;
+            console.log(src)
+        }
+        
+        function myDelete() {
+            document.getElementById('preview').classList.remove('show')
+            document.getElementById('preview').classList.add('delete')
+            document.getElementById('main').src = ""
+        }
+    </script>
     <script src="./aos/dist/aos.js"></script>
     <script>
         AOS.init();
