@@ -689,10 +689,15 @@
       }
 
       .wrap-visimisi {
-        display: flex;
+          display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
+      }
+
+      .show {
+          transition: 2s ease-in;
+          animation: previ 0.5s ease-in;
       }
 
     .wrap-preview {
@@ -707,6 +712,15 @@
         min-height: max-content;
         border-radius: 20px;
         overflow: hidden;
+    }
+
+    @keyframes previ {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 
     .close {
