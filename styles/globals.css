@@ -94,13 +94,22 @@ p, small, span, a, h4 {
   display: flex;
   /* background-image: url('../images/banner/gelombang_hero.png'); */
   background-size: contain;
-  background-color: #ddffe3;
+  background-color: #ddffe3;  
 }
 
 .wrap-hero-homepage {
   display: flex;
   width: 100vw;
   height: 100%;
+  text-align: center;
+}
+
+.wrap-hero-homepage-detail {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -125,7 +134,7 @@ p, small, span, a, h4 {
   justify-content: center;
   align-items: center;
 }
-.hero-homepage-detail .wrap-hero-homepage .hero-child {
+.hero-homepage-detail .wrap-hero-homepage-detail .hero-child {
   width: 100%;
   height: 100%;
   display: flex;
@@ -135,7 +144,7 @@ p, small, span, a, h4 {
   text-align: center;
 }
 
-.hero-homepage-detail .wrap-hero-homepage .hero-child2 {
+.hero-homepage-detail .wrap-hero-homepage-detail .hero-child2 {
   width: 100%;
   height: 100%;
   text-align: center;
@@ -157,6 +166,29 @@ p, small, span, a, h4 {
   text-align: left;
 }
 
+.wrap-hero-homepage-detail .hero-child-detail h1 {
+  color: #006411;
+  margin-top: 30px;
+  font-weight: bold;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 55px;
+  text-align: center;
+}
+
+.hero-child-detail .p {
+  line-height: 2em;
+  text-align: center;
+  width: 84%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  font-size: 17px;
+  color: rgb(128, 128, 128);
+}
+
 .hero-child .p {
   line-height: 2em;
   text-align: left;
@@ -168,7 +200,7 @@ p, small, span, a, h4 {
   color: rgb(128, 128, 128);
 }
 
-.wrap-hero-homepage .hero-child-detail h1 {
+.wrap-hero-homepage-detail .hero-child-detail h1 {
   color: #006411;
   font-weight: bold;
   width: 50%;
@@ -416,22 +448,154 @@ p, small, span, a, h4 {
 .wrap-pricing {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;+
 }
 
 .wrap-paket {
-  width: 80vw;
+  width: 90vw;
   background-color: rgb(255, 255, 255);
   border-radius: 14px;
   padding: 20px;
   margin-left: auto;
+  flex-wrap: wrap;
   margin-right: auto;
   margin-bottom: 50px;
   height: max-content;
   justify-content: center;
-  align-items: center;
+  display: flex;
+}
+
+.wrap-paket .listt img {
+  width: 16px;
+  margin-right: 10px;
+}
+
+.child-listt {
   display: flex;
   flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 33%;
+  padding: 20px 20px 30px 20px;
+}
+
+.child-listt:nth-child(1) {
+  border-right: 1px solid black;
+}
+.child-listt:nth-child(2) {
+  border-right: 1px solid black;
+}
+
+.child-listt-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.child-listt-bottom .listtt {
+  width: 33%;
+  margin-bottom: 30px;
+}
+
+.onelist {
+  border-top: 1px solid black;
+}
+
+.wrapper-listtt {
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+}
+
+.wrap-listtt .listtt {
+  padding-left: 40px;
+}
+
+.wrapper-listtt .listtt:nth-child(1) {
+  border-right: 1px solid black;
+}
+.wrapper-listtt .listtt:nth-child(2) {
+  border-right: 1px solid black;
+}
+
+.hr {
+  width: 100%;
+  border-top: 1px solid black;
+  margin-bottom: 40px;
+}
+
+.child-listt p {
+  position: relative;
+  top: -4px;
+}
+
+.listtt p {
+  position: relative;
+  top: -4px;
+}
+
+.wrap-listtt {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.listt {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  padding: 10px;
+  height: max-content;
+}
+
+.listtt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: start;
+  align-items: start;
+}
+
+.listtt h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.listttttt {
+  padding: 10px;
+  display: flex;
+  margin-left: -26px;
+  align-items: start;
+  justify-content: start;
+}
+
+.listttttt p {
+  width: 100%;
+}
+
+.listtt li {
+  list-style: none;
+}
+
+.listtt img {
+  width: 16px;
+  height: 16px;
+}
+
+.listt h3 {
+  color: #006411;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title-listt {
+  font-size: 22px;
+  color: #006411;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
 
 .wrap-paket img {
@@ -718,7 +882,13 @@ footer li {
 .menu-katalog h2 {
   font-weight: bold;
   position: relative;
-  left: -55px;
+  font-size: 26px;
+  width: 60vw;
+  margin-top: -60px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .card-katalog {
