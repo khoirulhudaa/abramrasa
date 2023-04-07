@@ -32,6 +32,7 @@
         width: 100vw;
         height: max-content;
         display: flex;
+        margin-top: 60px;
         /* background-image: url('../images/banner/gelombang_hero.png'); */
         background-size: contain;
     }

@@ -84,6 +84,7 @@ p, small, span, a, h4 {
   position: relative;
   width: 100vw;
   height: 550px;
+  margin-top: 80px;
   display: flex;
   /* background-image: url('../images/banner/gelombang_hero.png'); */
   background-size: contain;
