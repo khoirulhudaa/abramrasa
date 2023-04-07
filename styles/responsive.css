@@ -695,6 +695,25 @@
         width: 100%;
       }
 
+    .wrap-preview {
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        width: 94vw;
+        z-index: 2;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-height: 80vh;
+        min-height: max-content;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .close {
+        width: 30px;
+        height: 30px;
+    }
+
       .visi h2 {
         font-size: 46px;
         font-weight: bold;

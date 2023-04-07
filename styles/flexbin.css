@@ -21,12 +21,14 @@
       .flexbin > * > img {
         height: 300px;
         object-fit: cover;
+        cursor: pointer;
         max-width: 100%;
         border-radius: 12px;
         min-width: 100%;
         vertical-align: bottom; }
         .flexbin img:hover {
             transition: 0.1s;
+            cursor: pointer;
             filter: brightness(80%);
         }
     .flexbin.flexbin-margin {
@@ -53,6 +55,7 @@
             height: 150px;
             object-fit: cover;
             max-width: 100%;
+            cursor: pointer;
             min-width: 100%;
             vertical-align: bottom; }
         .flexbin.flexbin-margin {
@@ -80,6 +83,7 @@
             object-fit: cover;
             margin-bottom: 20px;
             max-width: 100%;
+            cursor: pointer;
             min-width: 100%;
             vertical-align: bottom; }
         .flexbin.flexbin-margin {
