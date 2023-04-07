@@ -1056,12 +1056,18 @@ p, small, span, a, h4 {
   width: 80%;
 }
 
+img {
+  image-rendering: optimizeQuality; /* membuat gambar terlihat lebih halus */
+  -webkit-optimize-contrast: true; /* meningkatkan kontras gambar */
+  -webkit-backface-visibility: hidden; /* memperbaiki masalah flicker di beberapa browser */
+}
+
 footer {
   position: relative;
   width: 100vw;
   margin-top: 0px;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   background-color: #006411;
   color: white;
   height: max-content;

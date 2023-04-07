@@ -26,6 +26,12 @@
     .navbar img {
         width: 11%;
     }
+
+    img {
+        image-rendering: optimizeQuality; /* membuat gambar terlihat lebih halus */
+        -webkit-optimize-contrast: true; /* meningkatkan kontras gambar */
+        -webkit-backface-visibility: hidden; /* memperbaiki masalah flicker di beberapa browser */
+    }
     
     .hero-homepage {
         position: relative;
