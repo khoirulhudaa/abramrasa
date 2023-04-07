@@ -893,8 +893,9 @@ p, small, span, a, h4 {
   background-position: center;
   background-repeat: no-repeat;
   max-height: 80vh;
+  margin-top: -40px;
   min-height: max-content;
-  border-radius: 20px;
+  border: 2px solid white;
   overflow: hidden;
 }
 
@@ -910,8 +911,8 @@ p, small, span, a, h4 {
   width: 40px;
   height: 40px;
   display: flex;
-  top: 20px;
-  right: 20px;
+  top: 14px;
+  right: 14px;
   box-shadow:
   2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
   6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
