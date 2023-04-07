@@ -1,4 +1,8 @@
 @media screen and (max-width: 652px) {
+
+    html {
+        scroll-behavior: smooth;
+    }
         
     .navbar {
         position: relative;
@@ -648,15 +652,67 @@
         width: 100vw;
         margin-top: 0px;
         overflow: hidden;
-        background-color: #ffffff;
         margin-bottom: 10px;
-        height: 65px;
+        background-color: #006411;
+        color: white;
+        height: max-content;
         display: flex;
-        justify-content: center;
-        padding: 20px 90px 20px 90px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 90px 10px 90px;
         align-items: center;
+    }  
+
+    .footer-top {
+        width: 100vw;
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+        padding: 24px 5px;
+        align-items: center;
+        justify-content: center;
     }
     
+    .footer-bottom {
+        padding: 12px 0;
+        width: 100vw;
+        border-top: 1px solid white;
+        text-align: center;
+    }
+    .footer-top p {
+        width: 80%;
+        color: rgb(231, 231, 231);
+        font-size: 16px;
+      }
+      
+      .wrap-sosmed {
+        display: flex;
+        align-items: center;
+      }
+      
+      .wrap-sosmed img {
+        width: 35px;
+        color: white;
+        background-color: white;
+        cursor: pointer;
+        border-radius: 10000px;
+        padding: 5px;
+        box-sizing: border-box;
+        margin-right: 15px;
+        margin-left: 15px;
+        transition: 0.2s;
+      }
+      
+      .wrap-sosmed img:hover {
+        transition: 0.2s;
+        filter: brightness(70%);
+      }
+      
+      .wrap-sosmed img:active {
+        transform: scale(0.93);
+        transition: 0.2s;
+      }
+
     .footer-left {
         width: 100vw;
         display: flex;

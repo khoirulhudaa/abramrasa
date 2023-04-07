@@ -5,6 +5,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
   background-color: #ddffe3;
   overflow-x: hidden; 
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -806,6 +807,38 @@ p, small, span, a, h4 {
   width: 50%;
 }
 
+.footer-top p {
+  width: 50%;
+  color: rgb(231, 231, 231);
+}
+
+.wrap-sosmed {
+  display: flex;
+  align-items: center;
+}
+
+.wrap-sosmed img {
+  width: 35px;
+  color: white;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 10000px;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-right: 40px;
+  transition: 0.2s;
+}
+
+.wrap-sosmed img:hover {
+  transition: 0.2s;
+  filter: brightness(70%);
+}
+
+.wrap-sosmed img:active {
+  transform: scale(0.93);
+  transition: 0.2s;
+}
+
 .section5-left img {
   width: 60%;
 }
@@ -832,6 +865,21 @@ p, small, span, a, h4 {
   border: 1px solid rgba(70, 70, 70, 0.747)
 }
 
+.footer-top {
+  width: 100vw;
+  display: flex;
+  padding: 24px 35px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-bottom {
+  padding: 12px 0;
+  width: 100vw;
+  border-top: 1px solid white;
+  text-align: center;
+}
+
 .footer-left img {
   width: 20%;
 }
@@ -851,8 +899,11 @@ footer {
   margin-top: 0px;
   overflow: hidden;
   margin-bottom: 10px;
-  height: 55px;
+  background-color: #006411;
+  color: white;
+  height: max-content;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 10px 90px 10px 90px;
   align-items: center;
