@@ -667,10 +667,10 @@
         width: 100vw;
         flex-direction: column;
         display: flex;
-        text-align: center;
+        text-align: left;
         padding: 24px 5px;
-        align-items: center;
-        justify-content: center;
+        align-items: start;
+        justify-content: start;
     }
     
     .footer-bottom {
@@ -679,15 +679,25 @@
         border-top: 1px solid white;
         text-align: center;
     }
+
     .footer-top p {
         width: 80%;
         color: rgb(231, 231, 231);
         font-size: 16px;
+        margin-left: 30px;
       }
       
       .wrap-sosmed {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        margin-top: 12px;
+        align-items: start;
+        margin-left: 12px;
+      }
+
+      .wrap-sosmed div {
+        margin-bottom: 20px;
+        display: flex;
       }
       
       .wrap-sosmed img {
