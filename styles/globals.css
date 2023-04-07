@@ -435,6 +435,16 @@ p, small, span, a, h4 {
   margin-top: 70px;
 }
 
+#visi {
+  position: relative;
+  top: -50px;
+}
+
+#layanan {
+  position: relative;
+  top: -50px;
+}
+
 .section4 h2 {
   color: #006411;
   font-weight: bold;
