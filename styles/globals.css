@@ -838,6 +838,59 @@ p, small, span, a, h4 {
   filter: brightness(70%);
 }
 
+.visi {
+  width: 85vw;
+  margin-top: 80px;
+  background-color: #006411;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  height: max-content;
+  border-radius: 20px;
+  padding: 22px 20px;
+}
+
+.pvisi {
+  line-height: 2em;
+}
+
+.visi h2 {
+  font-size: 46px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 16px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.wrap-visimisi {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.wrap-visimisi b {
+  background-color: #ffffff;
+  color: #006411;
+  margin-right: 16px;
+  border-radius: 1000px;
+  padding: 4px 20px;
+  width: max-content;
+}
+
+.visi p {
+  width: 90%;
+}
+
+.wrap-visimisi div {
+  width: 100%;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+}
+
 .wrap-sosmed img:active {
   transform: scale(0.93);
   transition: 0.2s;
